@@ -1,0 +1,334 @@
+
+ * { /* todos los elementos trabajaran de de la misma manera, padding y border no incrementan su ancho*/
+	-webkit-box-sizing: border-box;  
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 1.71429;
+	font-family: 'Montserrat', sans-serif;
+ }
+
+img {
+	vertical-align: middle;
+	max-width: 100%;/* redimensionar imágenes responsive */
+	height: auto; /* redimensionar imágenes responsive */
+}
+
+/* clases reutilizables*/
+.mb-0 {
+	margin-bottom: 0px;
+}
+
+.mt-0 {
+	margin-top: 0px;
+}
+
+.m-0 {
+	margin: 0px;
+}
+
+a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #128F76;
+}
+
+h1 {
+	font-weight: 700;
+}
+
+h2 {
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+
+/*------Header------*/
+header {
+	top: 0;
+	left: 0;
+	background-color: #2C3E50;
+	display:flex;
+	width: 100%;
+	height: 20%;
+	position: fixed; /* fija la barra de navegación arriba*/
+	display: flex; /* modo flex para maquetar*/
+	flex-direction: row;  /* modo horizontal*/
+	flex-wrap: wrap; /* permite multilinea */
+	align-items: center;
+	color: #FFF;
+	font-weight: 700;
+}
+
+header div {
+	font-size: 100%;
+	display: inline-flex;
+	color:#fff;
+	margin-left: auto;
+	margin-right: 11%;
+	width: auto;
+}
+
+header h2 {
+	padding: 0% 7%;
+	font-size: 200%;
+	display: inline-flex;
+	align-items: flex-start;
+}
+
+header div a {
+	margin: 3%;
+	font-size: 105%;
+}
+
+/* ajustes generales para las section*/
+section { 
+	text-align: center;
+	padding: 6% 0% 10% 0%;
+}
+
+/*------Intro------*/
+.intro {
+	width: 100%;
+	background-color: #18BC9C;
+	width: 100%;
+	height: auto; 
+	padding-top: 15.5%;
+	padding-bottom: 7%;
+	text-align: center;
+	color: #FFF;
+}
+
+h1 {
+	font-size: 490%;
+	margin:0;
+	padding: 0;
+}
+
+hr{
+	width:7%;
+	height:0.3em; 
+	background-color:#FFF; 
+	border:none; 
+	display: inline-block;
+	margin-right: 0.5%;
+	margin-left: 0.5%;
+}
+
+/*Decoración estrella*/
+.line{
+	font-size: 200%;
+	display: inline-block;
+}
+
+.intro p {
+	font-family:'Lato', sans-serif;;
+	font-size: 180%;
+}
+
+section h2 {
+	font-size: 300%;
+	color:#212529;
+}
+
+/*Decoración azul*/
+.blue_star hr {
+	background-color: #2C3E50;
+	display: inline-block;
+	width:8%;
+	height:0.3em; 
+	border:none; 
+	display: inline-block;
+	margin-right: 0.5%;
+	margin-left: 0.5%;
+}
+
+.line2{
+	color:#2C3E50;
+	font-size: 200%;
+	display: inline-block;
+}
+
+/*Porfolio: galeria*/
+.photos img{
+	display: inline-block;
+	width: 27%;
+	height: auto;
+	margin:1%;
+}
+
+/*------about-----*/
+.about {
+	width: 100%;
+	background-color: #18BC9C;
+	width: 100%;
+	height: auto; 
+	padding-top: 5%;
+	padding-bottom: 5%;
+	text-align: center;
+	color: #FFF;
+}
+
+.about h2 {
+	color: #FFF;
+}
+
+.columns { 
+	width: 57%;
+	margin-right: auto;
+	margin-left:auto;
+/* texto en columnas */
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+	-moz-column-count: 2; /* Firefox */
+	column-count: 2;
+	-moz-column-gap: 0.1%;/* espacio de separación */
+	-webkit-column-gap: 0.1%;
+	column-gap: 0.1%;
+	-moz-column-width: 270px;	        
+	-webkit-column-width: 270px;
+	column-width: 270px;
+}
+
+.columns p {
+	text-align: left;
+	font-size: 114%;
+	padding: 0;
+	margin-top: 0;
+}
+
+/*------About------*/
+.about button {
+	border: solid;
+	border-width: 2px;
+	border-color: #FFF;
+	background: #18BC9C;
+	color: #FFF;
+	padding: 1% 1.3%;
+	font-size: 128%;
+	border-radius: 5px;
+	margin-top:2%;
+	font-family:'Lato', sans-serif;
+}
+
+form { /* formulario centrado */
+	margin: 0 auto;
+	padding:2% 21%;
+	width: 100%;
+	text-align: left;
+}
+
+form div + div { /* separación horizontal de campos de texto */
+	margin-top: 4%;
+}
+
+input {
+	/* Para asegurarse de que todos los campos de texto tienen las mismas propiedades*/
+	font: 150% 'Lato', sans-serif; /* tipografia */
+	color:#9C9899;
+	border-top:none;
+	border-right: none;
+	border-left: none; 
+	padding-bottom: 5%;
+	width: 100%;
+	border-width: thin;
+	outline: none;
+	border-color: #eee;/* sin bordes los campos de texto */
+}
+
+button {
+	border: solid;
+	border-width: 2px;
+	background: #18BC9C;
+	color: #FFF;
+	padding: 1.7% 2.2%;
+	font-size: 128%;
+	border-radius: 8px;
+	margin-top:0;
+	font-family:'Lato', sans-serif;
+	font-weight: 700;
+}
+
+/*------Footer------*/
+footer {
+	background-color: #2C3E50;
+	color: #FFF;
+	text-align: center;
+	width: 100%;
+	padding-top: 2% ;
+	padding-bottom: 2%;
+	}
+
+.tfooter { 	
+/* texto en columnas */
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+	-moz-column-count: 3; /* Firefox */
+	column-count: 3;
+	-moz-column-gap: 0.1%;/* espacio de separación */
+	-webkit-column-gap: 0.1%;
+	column-gap: 0.1%;
+	-moz-column-width: 150px;	        
+	-webkit-column-width: 150px;
+	column-width: 150px;
+	width: 100%;
+	height: 40%;
+	margin-bottom: 8%;
+}
+
+.tfooter h3 {
+	break-before: column;
+	margin-top: 10%;
+	margin-bottom: 5%;
+	font-size: 175%;
+}
+
+.tfooter p {
+	font-size: 125%;
+}
+
+footer a {
+	color: #18BC9C;
+}
+
+footer p {
+	font-family:'Lato', sans-serif;
+	font-size: 100%;
+	margin:0px;
+	padding: 0.1%;
+}
+
+.tfooter button {
+	border: solid;
+	border-width: 2px;
+	background: #2C3E50;
+	color: #FFF;
+	padding: 2%;
+	font-size: 128%;
+	border-radius: 50px;
+	margin:0.5%;
+	font-family:'Lato', sans-serif;
+	font-weight: 700;
+	width: 50px;
+	height: 50px;
+}
+
+textarea {
+	height: 20%;
+	margin-bottom: 0;
+	font: 150% 'Lato', sans-serif; /* tipografia */
+	color:#9C9899;
+	border-color: #eee;
+	border-top:none;
+	border-right: none;
+	border-left: none; 
+	padding-bottom: 5%;
+	width: 100%;
+	border-width: thin;
+	outline: none;
+}
